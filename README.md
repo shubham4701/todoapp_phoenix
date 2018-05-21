@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TodoApp
 
 To start your Phoenix server:
@@ -19,6 +18,3 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
-=======
-# todoapp_phoenix
->>>>>>> 5500cd06a77d9124a55820647d33d6a752e23100
