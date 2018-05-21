@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 shadow" style="margin: 10px 0px; padding: 10px">
+            <div class="display-2">
+                <%= if @task.complete do %>
+                    <a href="/toggle/<%= @task.id %>">
+                        <i class="fa fa-times text-danger" title="Mark incomplete"></i>
+                    </a>
+                    <% else %>
+                        <a href="/toggle/<%= @task.id %>">
+                            <i class="fa fa-check text-success" title="Mark complete"></i>
+                        </a>
+                        <% end %>
+                            <%= if @task.complete do %>
+                                <span class="text-muted" style="text-decoration: line-through;">
+                                    <% else %>
+                                        <span>
+                                            <% end %>
+                                                <%= @task.task_name %>
+                                        </span>
+
+                                        <div class="pull-right">
+                                            <a href="/delete/<%= @task.id %>">
+                                                <i class="far fa-trash-alt text-danger" title="Delete"></i>
+                                            </a>
+                                        </div>
+            </div>
+        </div>
+    </div>
+</div>
